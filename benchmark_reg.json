@@ -1,0 +1,91 @@
+{
+  "system": "MetaForge",
+  "author": "晨星",
+  "domain": "reg",
+  "seed": 20261002,
+  "config": {
+    "seed": 20261002,
+    "dim": 4,
+    "n_way": 5,
+    "k_shot": 5,
+    "q_shot": 15,
+    "reg_support": 10,
+    "reg_query": 10,
+    "lr_inner": 0.05,
+    "lr_outer": 0.1,
+    "inner_steps": 5,
+    "meta_iters": 400,
+    "meta_batch": 4,
+    "eval_episodes": 200,
+    "hidden": [
+      32,
+      16
+    ],
+    "embed_dim": 16,
+    "fuse_tol": 0.02,
+    "fuse_temp": 3.0
+  },
+  "results": [
+    {
+      "algorithm": "reptile",
+      "metric": "rmse",
+      "mean": 1.8599,
+      "std": 1.1473,
+      "n": 200,
+      "level": "sinusoid",
+      "higher_better": false
+    },
+    {
+      "algorithm": "maml",
+      "metric": "rmse",
+      "mean": 1.8602,
+      "std": 0.9334,
+      "n": 200,
+      "level": "sinusoid",
+      "higher_better": false
+    },
+    {
+      "algorithm": "metafuse",
+      "metric": "rmse",
+      "mean": 1.6866,
+      "std": 0.9146,
+      "n": 200,
+      "level": "sinusoid",
+      "higher_better": false
+    },
+    {
+      "algorithm": "baseline_mean",
+      "metric": "rmse",
+      "mean": 2.0011,
+      "std": 0.9576,
+      "n": 200,
+      "level": "sinusoid",
+      "higher_better": false
+    },
+    {
+      "algorithm": "baseline_scratch_reg",
+      "metric": "rmse",
+      "mean": 2.4076,
+      "std": 1.6899,
+      "n": 200,
+      "level": "sinusoid",
+      "higher_better": false
+    }
+  ],
+  "metafuse_reports": [
+    {
+      "kind": "reg",
+      "member_scores": [
+        1.8505799961928806,
+        1.7652529525324614
+      ],
+      "fused_score": 1.747614054728921,
+      "weights": [
+        0.4363518905838048,
+        0.5636481094161953
+      ],
+      "use_fusion": true,
+      "best_member": "maml"
+    }
+  ]
+}
