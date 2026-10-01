@@ -1,0 +1,8 @@
+# MetaForge 锁定依赖清单（已验证可复现）
+# 生成环境：Python 3.13.12 (managed) · Windows 11
+# 安装：pip install -r requirements.lock.txt
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pytest==9.1.1
+ruff==0.16.10
