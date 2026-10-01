@@ -1,0 +1,289 @@
+{
+  "system": "MetaForge",
+  "author": "晨星",
+  "domain": "cls",
+  "seed": 20261002,
+  "config": {
+    "seed": 20261002,
+    "dim": 4,
+    "n_way": 5,
+    "k_shot": 5,
+    "q_shot": 15,
+    "reg_support": 10,
+    "reg_query": 10,
+    "lr_inner": 0.05,
+    "lr_outer": 0.1,
+    "inner_steps": 5,
+    "meta_iters": 400,
+    "meta_batch": 4,
+    "eval_episodes": 200,
+    "hidden": [
+      32,
+      16
+    ],
+    "embed_dim": 16,
+    "fuse_tol": 0.02,
+    "fuse_temp": 3.0
+  },
+  "results": [
+    {
+      "algorithm": "protonet",
+      "metric": "accuracy",
+      "mean": 0.9159,
+      "std": 0.0688,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "reptile",
+      "metric": "accuracy",
+      "mean": 0.9584,
+      "std": 0.0887,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "maml",
+      "metric": "accuracy",
+      "mean": 0.9122,
+      "std": 0.1186,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "matching",
+      "metric": "accuracy",
+      "mean": 0.9897,
+      "std": 0.031,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "metafuse",
+      "metric": "accuracy",
+      "mean": 0.9439,
+      "std": 0.0624,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_majority",
+      "metric": "accuracy",
+      "mean": 0.2,
+      "std": 0.0,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_knn",
+      "metric": "accuracy",
+      "mean": 0.9988,
+      "std": 0.0125,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_logreg",
+      "metric": "accuracy",
+      "mean": 0.9995,
+      "std": 0.0041,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_scratch",
+      "metric": "accuracy",
+      "mean": 0.9951,
+      "std": 0.0173,
+      "n": 200,
+      "level": "easy",
+      "higher_better": true
+    },
+    {
+      "algorithm": "protonet",
+      "metric": "accuracy",
+      "mean": 0.8113,
+      "std": 0.0886,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "reptile",
+      "metric": "accuracy",
+      "mean": 0.8707,
+      "std": 0.1006,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "maml",
+      "metric": "accuracy",
+      "mean": 0.8538,
+      "std": 0.1125,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "matching",
+      "metric": "accuracy",
+      "mean": 0.8758,
+      "std": 0.0797,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "metafuse",
+      "metric": "accuracy",
+      "mean": 0.853,
+      "std": 0.1004,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_majority",
+      "metric": "accuracy",
+      "mean": 0.2,
+      "std": 0.0,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_knn",
+      "metric": "accuracy",
+      "mean": 0.9501,
+      "std": 0.058,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_logreg",
+      "metric": "accuracy",
+      "mean": 0.9623,
+      "std": 0.0476,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_scratch",
+      "metric": "accuracy",
+      "mean": 0.9105,
+      "std": 0.0737,
+      "n": 200,
+      "level": "medium",
+      "higher_better": true
+    },
+    {
+      "algorithm": "protonet",
+      "metric": "accuracy",
+      "mean": 0.4339,
+      "std": 0.0906,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "reptile",
+      "metric": "accuracy",
+      "mean": 0.5682,
+      "std": 0.0992,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "maml",
+      "metric": "accuracy",
+      "mean": 0.5906,
+      "std": 0.0987,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "matching",
+      "metric": "accuracy",
+      "mean": 0.5765,
+      "std": 0.0933,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "metafuse",
+      "metric": "accuracy",
+      "mean": 0.5453,
+      "std": 0.1018,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_majority",
+      "metric": "accuracy",
+      "mean": 0.2,
+      "std": 0.0,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_knn",
+      "metric": "accuracy",
+      "mean": 0.5701,
+      "std": 0.1104,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_logreg",
+      "metric": "accuracy",
+      "mean": 0.6431,
+      "std": 0.1069,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    },
+    {
+      "algorithm": "baseline_scratch",
+      "metric": "accuracy",
+      "mean": 0.5689,
+      "std": 0.1117,
+      "n": 200,
+      "level": "hard",
+      "higher_better": true
+    }
+  ],
+  "metafuse_reports": [
+    {
+      "kind": "cls",
+      "member_scores": [
+        0.40722222222222215,
+        0.5412222222222223
+      ],
+      "fused_score": 0.38133333333333336,
+      "weights": [
+        0.4008319133805427,
+        0.5991680866194573
+      ],
+      "use_fusion": false,
+      "best_member": "reptile"
+    }
+  ]
+}
