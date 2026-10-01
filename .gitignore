@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test / lint caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local scratch / secrets
+smoke.py
+.env
+*.log
+.DS_Store
+
+# Benchmark artifacts are COMMITTED (real reproducible baselines):
+#   benchmark.json, benchmark_reg.json  -> keep
