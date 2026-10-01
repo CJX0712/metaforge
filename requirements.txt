@@ -1,0 +1,8 @@
+# MetaForge 运行时依赖（宽松版本约束）
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.5.0
+
+# 开发 / 校验依赖
+pytest>=7.0
+ruff>=0.5
